@@ -22,6 +22,27 @@ This project fetches **active stock tickers** from the Polygon.io API and saves 
 - **csv** – for writing data into CSV format
 
 ---
+## 🗂 CSV Schema
+
+The CSV file (`tickers.csv`) will contain the following columns:
+
+| Column Name         | Description                                               | Data Type        |
+|--------------------|-----------------------------------------------------------|----------------|
+| `ticker`           | Stock ticker symbol                                        | String         |
+| `name`             | Full company name                                         | String         |
+| `market`           | Market type (e.g., stocks)                                | String         |
+| `locale`           | Locale of the market (e.g., US)                           | String         |
+| `primary_exchange` | Primary stock exchange where the ticker is listed         | String         |
+| `type`             | Security type (e.g., CS for common stock)                | String         |
+| `active`           | Indicates if the ticker is currently active (`True/False`) | Boolean/String |
+| `currency_name`    | Currency used (e.g., USD)                                 | String         |
+| `cik`              | Central Index Key (CIK) identifier                        | String         |
+| `composite_figi`   | Composite Financial Instrument Global Identifier (FIGI)   | String         |
+| `share_class_figi` | Share-class FIGI                                          | String         |
+| `last_updated_utc` | Timestamp of last update (UTC)                             | String/Datetime |
+
 
 Save all tickers into tickers.csv with a structured schema.
+
+
 
